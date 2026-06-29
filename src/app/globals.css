@@ -1,22 +1,86 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Background Colors */
+  --background: #f4f1fd;
+  --background-secondary: #f8fafc;
+
+  /* Text Colors */
+  --foreground: #03063A;
+  --foreground-secondary: #6b7280;
+
+  /* Brand Colors */
+  --primary: #1355f4;
+
+
+
+  /* Border */
+  --border: #dedede;
+
+  /* Card */
+  --card: #ffffff;
+  --card-foreground: #171717;
 }
 
 @theme inline {
+  /* Background */
   --color-background: var(--background);
+  --color-background-secondary: var(--background-secondary);
+
+  /* Foreground */
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-foreground-secondary: var(--foreground-secondary);
+
+  /* Primary */
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+
+  /* Secondary */
+  --color-secondary: var(--secondary);
+  --color-secondary-hover: var(--secondary-hover);
+
+  /* Border */
+  --color-border: var(--border);
+
+  /* Card */
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  /* Fonts */
+  --font-sans: var(--font-urbanist);
+  --font-mono: var(--font-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    /* Background */
     --background: #0a0a0a;
-    --foreground: #ededed;
+    --background-secondary: #171717;
+
+    /* Text */
+    --foreground: #f5f5f5;
+    --foreground-secondary: #a3a3a3;
+
+    /* Brand */
+    --primary: #1355f4;
+  
+    /* Border */
+    --border: #262626;
+
+    /* Card */
+    --card: #171717;
+    --card-foreground: #f5f5f5;
   }
+}
+
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
